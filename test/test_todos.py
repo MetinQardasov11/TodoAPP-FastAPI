@@ -3,10 +3,10 @@ from fastapi.testclient import TestClient
 from fastapi import status
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
-from ..models import Todos
-from ..routers.todos import get_current_user, get_db
-from ..database import Base
-from ..main import app
+from models import Todos
+from routers.todos import get_current_user, get_db
+from database import Base
+from main import app
 
 
 POSTGRES_DATABASE_URL = "postgresql://postgres:11112003Mm@localhost/TodoApplication"
